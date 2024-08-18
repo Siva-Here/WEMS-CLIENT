@@ -1,0 +1,105 @@
+ .content {
+  border: 1px solid black;
+  width: 120px;
+  font-size: 12px;
+  padding: 8px;
+  font-weight:800;
+  border-radius: 10px;
+  border: 2px solid rgb(74, 74, 156);
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+}
+
+.toggleOn {
+  max-height: 500px;
+}
+
+.toggleOff {
+  max-height: 50px;
+}
+
+.up {
+  transform: rotate(0.5turn);
+  transition: 0.5s;
+}
+
+.down {
+  transition: 0.5s;
+}
+
+.dFlexJustifyContentBetween p, .content p {
+  font-weight: 600;
+  color: #333;
+}
+
+.res {
+  font-weight: 800;
+  color: #333;
+}
+
+.res1 {
+  font-family: "Baloo Chettan";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  background: linear-gradient(180deg, #eb0a0a 0%, #d00303 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.res2 {
+  font-family: "Baloo Chettan";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(180deg, #04d604 0%, #03a103 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.head {
+  font-family: "Baloo Chettan";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  background: linear-gradient(90deg, #1A2097 0%, #2C35FD 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+table td{
+  padding:6px 0px;
+}
+
+
+input[type="date"]{
+  border-radius:7px;
+  text-align:center;
+  height:40px;
+  width:auto;
+  font-size:14px;
+  font-weight:600;
+  padding-right:5px;
+  border:2px solid hsla(240, 78%, 35%, 0.915)
+}
+
+
+.accordionCollapse {
+  transition: max-height 0.5s ease-in-out, opacity 0.8s ease-in-out; 
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+}
+
+.show {
+  opacity: 1;
+  max-height: 600px; 
+}

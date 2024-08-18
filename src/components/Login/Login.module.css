@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.login {
+    margin-right: 0px !important;
+}
+
+.border-div {
+    border-radius: 14px;
+    border: 2px solid #2C35FD;
+    height: 550px;
+
+}
+
+input::placeholder {
+    color: white !important;
+
+}
+
+.form-div {
+    border-radius: 21px;
+    background: linear-gradient(180deg, #2C35FD 0%, #1A1F97 100%);
+}
+
+.input-border {
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    width: 250px;
+}
+
+input {
+    background-color: transparent;
+    font-weight: bold !important;
+    line-height: 2.5 !important;
+}
+
+.noor {
+    display: flex;
+    width: 121px;
+    height: 45px;
+    padding: 7px 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    border: 2px solid #FEFCFC;
+    background: linear-gradient(180deg, #2C35FD 0%, #1A2097 100%);
+}
+
+/* .back {
+    height: 20px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    font-size: 13px;
+    font-size: 10px;
+    border-radius: 3px;
+    border: 1px solid #2C35FD;
+    background: linear-gradient(90deg, #2C35FD 0%, #1A2097 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.login {
+     height: 30px !important;
+    width: 100px !important;
+    justify-content: center !important;
+    padding: 3px 3px!important;
+    float: right !important;
+    margin-right: 25px !important;
+    padding-top: 7px !important;
+    font-size: 13px;
+    font-size: 10px; 
+    border-radius: 5px;
+    border: 1px solid #2C35FD;
+    background: linear-gradient(90deg, #2C35FD 0%, #1A2097 100%) !important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+}
+
+.welcome {
+    color: #1A2097;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    position: relative;
+    bottom: 8px;
+}
+
+.mrgin {
+    margin-top: 30px !important;
+}
+
+/* Add this CSS to your global styles or a dedicated CSS file */
+.swal-title {
+    font-size: 10px; /* Adjust font size as needed */
+}
+
+.swal-text {
+    font-size: 10px; /* Adjust font size as needed */
+    white-space: nowrap; /* Ensures the text stays in a single line */
+}

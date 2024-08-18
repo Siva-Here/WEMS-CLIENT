@@ -1,0 +1,12 @@
+@media (max-width: 320px) and (min-height: 774px) {
+    .svgpart {
+      left: 55px; /* Adjusted to move slightly right */
+    }
+    .username {
+      left: 55px; /* Adjusted to move slightly right */
+    }
+    .container {
+      background-color: black;
+    }
+  }
+  
