@@ -89,8 +89,8 @@ export const RegistrationPage = () => {
                     <div className="row mb-2">
                         <div className="col-sm-4 ">
                             <div className="mt-4 d-flex justify-content-around">
-                                <span className={`h1 ${styles.welcome} ms-1`}>W E M S</span>
-                                <div className={`btn fw-bold ${styles.login} p-3 d-flex justify-content-center`} onClick={()=>navigate("/login")}>LOG IN</div>
+                                <span className={`h1 ${styles.welcome} ms-1`}><img src="images/logo.png" alt="" style={{height:"32px", width:"32px"}}/>&nbsp;&nbsp;&nbsp;W E M S</span>
+                                <div className={`btn fw-bold ${styles.login} p-2 d-flex justify-content-center`} onClick={()=>navigate("/login")}>LOG IN</div>
                             </div>
                         </div>
                     </div>
