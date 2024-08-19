@@ -59,6 +59,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Error from './components/Error/Error.jsx';
 import { Navbar } from './components/Navbar/Navbar.jsx';
 import { setAuthenticated, setRegistrationCompleted } from './store/slices/AuthSlice';
+import { WebTeam } from './components/WebTeam/WebTeam.jsx';
 
 function App() {
   
@@ -80,6 +81,7 @@ function App() {
         <Route path="user" element={<PrivateRoute element={<Userstatistics />} />} />
         <Route path="expenses" element={<PrivateRoute element={<ExpensesStatistics />} />} />
         <Route path="report" element={<PrivateRoute element={<WeeklyStats />} />} />
+        <Route path="team" element={<PrivateRoute element={<WebTeam/>} />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

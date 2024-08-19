@@ -16,6 +16,8 @@ export const Service = () => {
 
     const dispatch = useDispatch();
     const { users, status, error } = useSelector((state) => state.users);
+    const expenseStatus = useSelector((state) => state.expenses.status);
+    const expenseError = useSelector((state) => state.expenses.error);
     const userId = useSelector((state) => state.auth.userId);
 
     useEffect(() => {
@@ -51,21 +53,17 @@ export const Service = () => {
 
     useEffect(() => {
         if (submitted) {
-            if (status === 'idle') {
-                if (error) {
-                    SweetAlert('Error', 'Failed to add expense. Please try again.', 'error');
-                } else {
-                    SweetAlert('Success', 'Expense added successfully!', 'success');
-                    setRows([{ name: "", cost: "" }]);
-                    setMealType("");
-                    setSelectedUsers(new Set());
-                }
-            } else if (status === 'rejected') {
+            if (expenseStatus === 'idle' && !expenseError) {
+                SweetAlert('Success', 'Expense added successfully!', 'success');
+                setRows([{ name: "", cost: "" }]);
+                setMealType("");
+                setSelectedUsers(new Set());
+            } else if (expenseStatus === 'rejected') {
                 SweetAlert('Error', 'Failed to add expense. Please try again.', 'error');
             }
             setSubmitted(false);
         }
-    }, [status, error, submitted]);
+    }, [expenseStatus, expenseError, submitted]);
 
     // Pagination
     const totalPages = Math.ceil(users.length / USERS_PER_PAGE);

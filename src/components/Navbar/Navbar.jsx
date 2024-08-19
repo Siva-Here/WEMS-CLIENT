@@ -8,6 +8,9 @@ import {
   FaFileInvoiceDollar,
   FaUserAlt,
   FaSignOutAlt,
+  FaUsers,
+  FaDesktop,
+  FaCode,
 } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 
@@ -212,6 +215,24 @@ export const Navbar = () => {
                 onClick={handleToggleOffcanvas}
               >
                 <FaUserAlt style={{ color: "#2196F3" }} /> Your &nbsp;Expenses
+              </NavLink>
+            </li>
+            <li className="nav-item" style={{ marginBottom: "2rem" }}>
+              <NavLink
+
+                to="/team"
+                className="nav-link"
+                style={{
+                  color: "#1A2097",
+                  fontSize: "1.1rem", 
+                  fontWeight: "bold",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+                onClick={handleToggleOffcanvas} 
+              >
+                <FaCode style={{ color: "#1A2097" }} /> Web &nbsp; Team
               </NavLink>
             </li>
             <li className="nav-item" style={{ marginBottom: "2rem" }}>

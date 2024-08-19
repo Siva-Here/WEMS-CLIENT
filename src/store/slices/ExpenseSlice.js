@@ -1,3 +1,4 @@
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -23,7 +24,13 @@ export const getExpenses = createAsyncThunk('expenses/get', async () => {
 export const addExpense = createAsyncThunk('expenses/add', async (expense) => {
     try {
         const response = await axios.post('https://wems.onrender.com/addExpense', expense);
-        return response.data;
+        
+        // Check for status code 201
+        if (response.status === 201) {
+            return response.data;
+        } else {
+            throw new Error('Failed to add expense'); // This will trigger the rejected case
+        }
     } catch (error) {
         throw new Error('Failed to add expense');
     }
@@ -54,7 +61,7 @@ const ExpenseSlice = createSlice({
             })
             .addCase(addExpense.fulfilled, (state, action) => {
                 state.status = 'idle';
-                state.expenses.push(action.payload); // Add the new expense to the state
+                state.expenses.push(action.payload); // Add the new expense to the state only if the status was 201
             })
             .addCase(addExpense.rejected, (state, action) => {
                 state.status = 'rejected';
