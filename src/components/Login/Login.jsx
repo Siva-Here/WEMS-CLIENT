@@ -115,6 +115,7 @@ export const Login = () => {
                     <div className="row mb-2">
                         <div className="col-sm-4">
                             <div className="mt-4 d-flex justify-content-around">
+                            <span className={`h1 ${styles.welcome} ms-1 me-1`}>&nbsp; <img src="/images/logo.png"style={{height:"33px",width:"33px"}} className='me-2'/>W E M S</span>
                                 <div className={`btn fw-bold ${styles.login} pe-5 d-flex justify-content-center ms-auto`} onClick={()=>navigate("/registration")}>
                                     CREATE ACCOUNT
                                 </div>

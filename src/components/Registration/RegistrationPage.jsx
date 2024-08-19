@@ -41,6 +41,8 @@ export const RegistrationPage = () => {
 
                         try {
                             const response = await axios.post("https://wems.onrender.com/add_roommate", formData);
+                            console.log("siva");
+                            console.log(response.data);
 
                             if (response.status === 201) {
                                 Swal.fire({
@@ -89,7 +91,7 @@ export const RegistrationPage = () => {
                     <div className="row mb-2">
                         <div className="col-sm-4 ">
                             <div className="mt-4 d-flex justify-content-around">
-                                <span className={`h1 ${styles.welcome} ms-1`}>W E M S</span>
+                            <span className={`h1 ${styles.welcome} ms-1`}>&nbsp; <img src="/images/logo.png"style={{height:"33px",width:"33px"}} className="me-2"/>&nbsp;W E M S</span>
                                 <div className={`btn fw-bold ${styles.login} p-3 d-flex justify-content-center`} onClick={()=>navigate("/login")}>LOG IN</div>
                             </div>
                         </div>
