@@ -85,7 +85,6 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
-
   );
 }
 
