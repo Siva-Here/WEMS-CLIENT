@@ -21,13 +21,13 @@ export const RegistrationPage = () => {
         const cpass = confirm.trim();
         const phone = mobile.trim();
 
-        if (uname.length >= 6 && uname.length <= 8) {
+        if (uname.length >= 4 && uname.length <= 12) {
             const hasUpperCase = /[A-Z]/.test(pass);
             const hasLowerCase = /[a-z]/.test(pass);
             const hasDigit = /\d/.test(pass);
             const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(pass);
 
-            if (pass.length >= 6 && pass.length <= 8 && hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar) {
+            if (pass.length >= 6 && pass.length <= 18 && hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar) {
                 if (password === cpass) {
                     if (phone.length === 10) {
                         const formData = {
