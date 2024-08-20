@@ -1,6 +1,6 @@
 .content {
   border: 1px solid black;
-  min-width: 155px;
+  min-width: 175px;
   font-size: 12px;
   padding: 8px;
   font-weight: 800;
@@ -98,5 +98,5 @@ input[type="date"] {
 
 .show {
   opacity: 1;
-  min-height: 275px;
+  min-height: 300px;
 }
