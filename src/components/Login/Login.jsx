@@ -28,7 +28,7 @@ export const Login = () => {
             const hasDigit = /\d/.test(pass);
             const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(pass);
 
-            if (pass.length >= 6 && pass.length <= 8 && hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar) {
+            if (pass.length >= 4 && pass.length <= 12 && hasUpperCase && hasLowerCase && hasDigit && hasSpecialChar) {
                 try {
                     const updatedFormData = { uname, upass: pass };
                     setFormData(updatedFormData);
