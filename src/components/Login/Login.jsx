@@ -22,7 +22,7 @@ export const Login = () => {
         const uname = username.trim();
         const pass = password.trim();
 
-        if (uname.length >= 6 && uname.length <= 8) {
+        if (uname.length >= 4 && uname.length <= 16) {
             const hasUpperCase = /[A-Z]/.test(pass);
             const hasLowerCase = /[a-z]/.test(pass);
             const hasDigit = /\d/.test(pass);
