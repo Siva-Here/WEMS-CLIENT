@@ -15,11 +15,12 @@ export const Accordion = ({ items = {}, debts = [], credits = [] }) => {
       <div className="d-flex justify-content-between" key={idx}>
         <p style={{ fontWeight: 800, fontSize: "13.5px" }}>
           {type === 'items' ? `${entry[0]} - ₹${entry[1]}` 
-            : type === 'debts' ? `${entry.user} owes ₹${entry.amount}` 
-            : `${entry.user} is owed ₹${entry.amount}`}
+            : type === 'debts' ? `${entry.user} owes ₹${entry.amount.toFixed(2)}` 
+            : `${entry.user} is owed ₹${entry.amount.toFixed(2)}`}
         </p>
+        <img src="images/solar_hamburger-menu-broken.svg" alt="img" style={{marginTop:"-20px"}}/>
         {idx === 0 && (
-          <p className={toggle ? styles.up : styles.down}>
+          <p className={toggle ? styles.up : styles.down} >
             <IoIosArrowDown />
           </p>
         )}

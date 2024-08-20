@@ -1,6 +1,6 @@
 .content {
   border: 1px solid black;
-  min-width: 160px;
+  min-width: 155px;
   font-size: 12px;
   padding: 8px;
   font-weight: 800;
@@ -11,8 +11,8 @@
 }
 
 .toggleOn {
-  max-height: 150px; /* Set a max height to trigger scroll when exceeded */
-  overflow-y: auto;  /* Enable vertical scrolling */
+  max-height: 150px; 
+  overflow-y: auto;  
 }
 
 .toggleOff {
