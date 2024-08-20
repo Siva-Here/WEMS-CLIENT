@@ -1,18 +1,18 @@
- .content {
+.content {
   border: 1px solid black;
-  width: 120px;
+  min-width: 160px;
   font-size: 12px;
   padding: 8px;
-  font-weight:800;
+  font-weight: 800;
   border-radius: 10px;
   border: 2px solid rgb(74, 74, 156);
-  max-height: 80px;
   overflow: hidden;
   transition: max-height 0.8s ease-in-out;
 }
 
 .toggleOn {
-  max-height: 500px;
+  max-height: 150px; /* Set a max height to trigger scroll when exceeded */
+  overflow-y: auto;  /* Enable vertical scrolling */
 }
 
 .toggleOff {
@@ -74,26 +74,23 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-table td{
-  padding:6px 0px;
+table td {
+  padding: 6px 0px;
 }
 
-
-input[type="date"]{
-  border-radius:7px;
-  text-align:center;
-  height:40px;
-  width:auto;
-  font-size:14px;
-  font-weight:600;
-  padding-right:5px;
-  border:2px solid hsla(240, 78%, 35%, 0.915)
+input[type="date"] {
+  border-radius: 7px;
+  text-align: center;
+  height: 40px;
+  width: auto;
+  font-size: 14px;
+  font-weight: 600;
+  padding-right: 5px;
+  border: 2px solid hsla(240, 78%, 35%, 0.915);
 }
-
 
 .accordionCollapse {
-  transition: max-height 0.5s ease-in-out, opacity 0.8s ease-in-out; 
+  transition: max-height 0.5s ease-in-out, opacity 0.8s ease-in-out;
   overflow: hidden;
   opacity: 0;
   max-height: 0;
@@ -101,5 +98,5 @@ input[type="date"]{
 
 .show {
   opacity: 1;
-  max-height: 600px; 
+  min-height: 275px;
 }
