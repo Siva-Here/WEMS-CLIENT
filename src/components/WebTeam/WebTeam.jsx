@@ -30,7 +30,7 @@ export const WebTeam = () => {
                     </figure>
                     <div className="bg-white p-4">
                       <center><h2 className="fw-bold" style={{ color: "#1A2097" }}>Noor Basha Shaik</h2></center>
-                      <center><p className="fw-bold">FullStack Developer</p></center>
+                      <center><p className="fw-bold">Front End Developer</p></center>
                       <div className="card-footer bg-white p-1 d-flex justify-content-between fs-3" style={{ color: "#1A2097" }}>
                         {/* WhatsApp */}
                         <a href="https://wa.me/9390609372" target="_blank" rel="noopener noreferrer">
@@ -106,8 +106,8 @@ export const WebTeam = () => {
                       </a>
                     </figure>
                     <div className="bg-white p-4">
-                      <center><h2 className="fw-bold" style={{ color: "#1A2097" }}>Yashwanth Kumar</h2></center>
-                      <center><p className="fw-bold">FullStack Developer</p></center>
+                      <center><h2 className="fw-bold" style={{ color: "#1A2097" }}>Yaswanth Kumar</h2></center>
+                      <center><p className="fw-bold">Front End Developer</p></center>
                       <div className="card-footer bg-white p-1 d-flex justify-content-between fs-3" style={{ color: "#1A2097" }}>
                         {/* WhatsApp */}
                         <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
@@ -144,8 +144,8 @@ export const WebTeam = () => {
                       </a>
                     </figure>
                     <div className="bg-white p-4">
-                      <center><h2 className="fw-bold" style={{ color: "#1A2097" }}>Chandrashekar</h2></center>
-                      <center><p className="fw-bold">FullStack Developer</p></center>
+                      <center><h2 className="fw-bold" style={{ color: "#1A2097" }}>Chandra sekhar</h2></center>
+                      <center><p className="fw-bold">Front End Developer</p></center>
                       <div className="card-footer bg-white p-1 d-flex justify-content-between fs-3" style={{ color: "#1A2097" }}>
                         {/* WhatsApp */}
                         <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
