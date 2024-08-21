@@ -65,14 +65,7 @@ export const Accordion = ({ items = {}, debts = [], credits = [] }) => {
           {type === 'items' ? `${entry[0]} - ₹${entry[1]}` 
             : type === 'debts' ? `${entry.user} owes ₹${entry.amount.toFixed(2)}` 
             : `${entry.user} is owed ₹${entry.amount.toFixed(2)}`}
-        </p>
-        {type === 'debts' && (
-          <img 
-            src="images/solar_hamburger-menu-broken.svg" 
-            alt="img" 
-            style={{ marginTop: "-20px" }} 
-          />
-        )}
+        
         {idx === 0 && (
           <p className={toggle ? styles.up : styles.down}>
             <IoIosArrowDown />
