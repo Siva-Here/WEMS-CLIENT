@@ -1,7 +1,7 @@
 export const WebTeam = () => {
     return (
       <>
-        <section className="py-3 py-md-5 py-xl-8">
+        <section className="py-3 py-md-5 py-xl-8 mb-4">
           <div className="container">
             <div className="row justify-content-md-center">
               <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -91,6 +91,7 @@ export const WebTeam = () => {
                     </div>
                   </div>
                 </div>
+
                 <div className="col-12 col-lg-4 border border-2 pt-3"
                   style={{ boxShadow: "0 0 20px #1A2097" }}>
                   <div className="ms-auto me-auto pt-3">
@@ -167,6 +168,46 @@ export const WebTeam = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="col-12 col-lg-4 border border-2 pt-3"
+                  style={{ boxShadow: "0 0 20px #1A2097" }}>
+                  <div className="ms-auto me-auto pt-3">
+                    <figure className="card-img-top m-0 overflow-hidden bsb-overlay-hover">
+                      <a href="#!">
+                        <img
+                          className="img-fluid mx-auto d-block"
+                          style={{ borderRadius: "13px", height: "200px", width: "200px" }}
+                          loading="lazy"
+                          src=""
+                          alt="Shaik Akhil"
+                        />
+                      </a>
+                    </figure>
+                    <div className="bg-white p-4">
+                      <center><h2 className="fw-bold" style={{ color: "#1A2097" }}>Shaik Akhil</h2></center>
+                      <center><p className="fw-bold">UI/UX Designer</p></center>
+                      <div className="card-footer bg-white p-1 d-flex justify-content-between fs-3" style={{ color: "#1A2097" }}>
+                        {/* WhatsApp */}
+                        <a href=" # " target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-whatsapp"></i>
+                        </a>
+                        {/* Email */}
+                        <a href=" # " target="_blank" rel="noopener noreferrer">
+                          <i className="fa-regular fa-envelope"></i>
+                        </a>
+                        {/* Instagram */}
+                        <a href=" # " target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-instagram"></i>
+                        </a>
+                        {/* LinkedIn */}
+                        <a href=" # " target="_blank" rel="noopener noreferrer">
+                          <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
